@@ -14,26 +14,138 @@
 <div class="content-body">
 	<section id="drag-area">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12 text-center mb-2">
+				<h3>
+				<b>
+					<a href="" placement="bottom" ngbTooltip="Previous Month" >
+						<i class="ft-chevron-left"></i>
+					</a>
+					APRIL 2018
+					<a href="" placement="bottom" ngbTooltip="Next Month" >
+						<i class="ft-chevron-right"></i>
+					</a>
+				</b>
+				</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
 				<div class="card">
 					<div class="card-header">
-						<h4 class="card-title">Version 3.0</h4>
-						<p>Date : [14-03-2018]</p>
 					</div>
 					<div class="card-content collapse show">
 						<div class="card-body">
-							<ul>
-								<li>Added : Dynamic assets and app-assets path for pug</li>
-								<li>Updated : Updated to Bootstrap 4 stable</li>
-								<li>Updated : Converted all Jade files to Pug</li>
-								<li>Updated : Grunt and Gulp packages</li>
-								<li>Updated : Angular package updated to its latest version(v5.2.8)</li>
-								<li>Updated : ng-bootstrap package updated to its latest version(v1.0.1)</li>
-							</ul>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-md-3 offset-md-2 col-xs-12 mt-1">
+									<label for="title" style="float: right;">
+										<strong>TODAY:</strong>
+									</label>
+									</div>
+									<div class="col-md-5 col-xs-12">
+									<input type="date" class="form-control" >
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-md-3 offset-md-2 col-xs-12 mt-1">
+									<label for="title ">
+										<strong>ENTER VALUE:</strong>
+									</label>
+									</div>
+									<div class="col-md-5 col-xs-12">
+									<input type="text" class="form-control" >
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header">
+					</div>
+					<div class="card-content collapse show">
+					<div class="card-body">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-3  col-xs-12 mt-1">
+								<label for="title" style="float: right;">
+									<strong>DAY CHANGE:</strong>
+								</label>
+								</div>
+								<div class="col-md-5 col-xs-12">
+									<input type="text" class="form-control" >
+								</div>
+								<div class="col-md-4 col-xs-12 mt-1" style="color:red;">
+									STOP TRADING
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-3  col-xs-12 mt-1" >
+								<label for="title" style="float: right;">
+									<strong>YTD P&L:</strong>
+								</label>
+								</div>
+								<div class="col-md-5 col-xs-12">
+									<input type="text" class="form-control" >
+								</div>
+								<div class="col-md-4 col-xs-12 mt-1" style="color:green">
+									LIMIT TRADING
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
 		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header">
+						<h4 class="card-title">DAILY STRATEGY</h4>
+						<a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+						<div class="heading-elements">
+							<ul class="list-inline mb-0">
+								<li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="card-content collapse show">
+						<div class="card-body">
+							<div class="alert alert-secondary mb-2" role="alert">
+								<small>IF MORE THAN 10% OF PORTFOLIO IS AT RISK,HEDGE IS REQUIRED!</small> 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+					<div class="card">
+						<div class="card-header">
+							<h4 class="card-title">LONG TERM STRATEGY</h4>
+							<a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+							<div class="heading-elements">
+								<ul class="list-inline mb-0">
+									<li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="card-content collapse show">
+							<div class="card-body">
+								<div class="alert alert-secondary mb-2" role="alert">
+									<small>NEVER COMMIT MORE THAN 25% OF PORTFOLIO VALUE TO ANY ONE POSITION!</small>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 	</section>
 </div>

@@ -4,6 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { DashboardComponent } from './dashboard.component';
 import { MatchHeightModule } from './../../shared/directives/match-height.directive';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 const routes: Routes = [
   {
     path: '',
@@ -16,6 +18,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
+    NgbModule,
     CommonModule,
     MatchHeightModule,
     RouterModule.forChild(routes)
